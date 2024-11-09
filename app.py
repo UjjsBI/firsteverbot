@@ -23,7 +23,7 @@ user_input = st.chat_input("Type your message...")
 # Function to get a response from OpenAI
 def get_response(prompt):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4-turbo",
         messages=[
             {"role": m["role"], "content": m["content"]}
             for m in st.session_state.messages
